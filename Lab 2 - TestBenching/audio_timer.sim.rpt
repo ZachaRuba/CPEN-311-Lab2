@@ -1,0 +1,1013 @@
+Simulator report for audio_timer
+Fri Oct 06 17:59:56 2017
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 717 nodes    ;
+; Simulation Coverage         ;      81.87 % ;
+; Total Number of Transitions ; 5457         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+; Option                                                                                     ; Setting              ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+; Simulation mode                                                                            ; Functional           ; Timing        ;
+; Start time                                                                                 ; 0 ns                 ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                 ;               ;
+; Vector input source                                                                        ; audio_timer_wave.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                   ; On            ;
+; Check outputs                                                                              ; Off                  ; Off           ;
+; Report simulation coverage                                                                 ; On                   ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                   ; On            ;
+; Display missing 1-value coverage report                                                    ; On                   ; On            ;
+; Display missing 0-value coverage report                                                    ; On                   ; On            ;
+; Detect setup and hold time violations                                                      ; Off                  ; Off           ;
+; Detect glitches                                                                            ; Off                  ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                  ; Off           ;
+; Generate Signal Activity File                                                              ; Off                  ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                  ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                  ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                   ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE           ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                  ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                 ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport            ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport            ; Transport     ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      81.87 % ;
+; Total nodes checked                                 ; 717          ;
+; Total output ports checked                          ; 717          ;
+; Total output ports with complete 1/0-value coverage ; 587          ;
+; Total output ports with no 1/0-value coverage       ; 130          ;
+; Total output ports with no 1-value coverage         ; 130          ;
+; Total output ports with no 0-value coverage         ; 130          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                ;
++--------------------------------------------------------------------+--------------------------------------------------------------------+------------------+
+; Node Name                                                          ; Output Port Name                                                   ; Output Port Type ;
++--------------------------------------------------------------------+--------------------------------------------------------------------+------------------+
+; |audio_timer|counter[18]~reg0                                      ; |audio_timer|counter[18]~reg0                                      ; regout           ;
+; |audio_timer|counter[17]~reg0                                      ; |audio_timer|counter[17]~reg0                                      ; regout           ;
+; |audio_timer|counter[16]~reg0                                      ; |audio_timer|counter[16]~reg0                                      ; regout           ;
+; |audio_timer|counter[15]~reg0                                      ; |audio_timer|counter[15]~reg0                                      ; regout           ;
+; |audio_timer|counter[14]~reg0                                      ; |audio_timer|counter[14]~reg0                                      ; regout           ;
+; |audio_timer|counter[13]~reg0                                      ; |audio_timer|counter[13]~reg0                                      ; regout           ;
+; |audio_timer|counter[12]~reg0                                      ; |audio_timer|counter[12]~reg0                                      ; regout           ;
+; |audio_timer|counter[11]~reg0                                      ; |audio_timer|counter[11]~reg0                                      ; regout           ;
+; |audio_timer|counter[10]~reg0                                      ; |audio_timer|counter[10]~reg0                                      ; regout           ;
+; |audio_timer|counter[9]~reg0                                       ; |audio_timer|counter[9]~reg0                                       ; regout           ;
+; |audio_timer|counter[8]~reg0                                       ; |audio_timer|counter[8]~reg0                                       ; regout           ;
+; |audio_timer|counter[7]~reg0                                       ; |audio_timer|counter[7]~reg0                                       ; regout           ;
+; |audio_timer|counter[6]~reg0                                       ; |audio_timer|counter[6]~reg0                                       ; regout           ;
+; |audio_timer|counter[5]~reg0                                       ; |audio_timer|counter[5]~reg0                                       ; regout           ;
+; |audio_timer|counter[4]~reg0                                       ; |audio_timer|counter[4]~reg0                                       ; regout           ;
+; |audio_timer|counter[3]~reg0                                       ; |audio_timer|counter[3]~reg0                                       ; regout           ;
+; |audio_timer|counter[2]~reg0                                       ; |audio_timer|counter[2]~reg0                                       ; regout           ;
+; |audio_timer|counter[1]~reg0                                       ; |audio_timer|counter[1]~reg0                                       ; regout           ;
+; |audio_timer|counter[0]~reg0                                       ; |audio_timer|counter[0]~reg0                                       ; regout           ;
+; |audio_timer|next_counter~4                                        ; |audio_timer|next_counter~4                                        ; out              ;
+; |audio_timer|next_counter~5                                        ; |audio_timer|next_counter~5                                        ; out              ;
+; |audio_timer|next_counter~6                                        ; |audio_timer|next_counter~6                                        ; out              ;
+; |audio_timer|next_counter~7                                        ; |audio_timer|next_counter~7                                        ; out              ;
+; |audio_timer|next_counter~8                                        ; |audio_timer|next_counter~8                                        ; out              ;
+; |audio_timer|next_counter~9                                        ; |audio_timer|next_counter~9                                        ; out              ;
+; |audio_timer|next_counter~10                                       ; |audio_timer|next_counter~10                                       ; out              ;
+; |audio_timer|next_counter~11                                       ; |audio_timer|next_counter~11                                       ; out              ;
+; |audio_timer|next_counter~12                                       ; |audio_timer|next_counter~12                                       ; out              ;
+; |audio_timer|next_counter~13                                       ; |audio_timer|next_counter~13                                       ; out              ;
+; |audio_timer|next_counter~14                                       ; |audio_timer|next_counter~14                                       ; out              ;
+; |audio_timer|next_counter~15                                       ; |audio_timer|next_counter~15                                       ; out              ;
+; |audio_timer|next_counter~16                                       ; |audio_timer|next_counter~16                                       ; out              ;
+; |audio_timer|next_counter~17                                       ; |audio_timer|next_counter~17                                       ; out              ;
+; |audio_timer|next_counter~18                                       ; |audio_timer|next_counter~18                                       ; out              ;
+; |audio_timer|next_counter~19                                       ; |audio_timer|next_counter~19                                       ; out              ;
+; |audio_timer|next_counter~20                                       ; |audio_timer|next_counter~20                                       ; out              ;
+; |audio_timer|next_counter~21                                       ; |audio_timer|next_counter~21                                       ; out              ;
+; |audio_timer|next_counter~22                                       ; |audio_timer|next_counter~22                                       ; out              ;
+; |audio_timer|next_counter~23                                       ; |audio_timer|next_counter~23                                       ; out              ;
+; |audio_timer|next_counter~24                                       ; |audio_timer|next_counter~24                                       ; out              ;
+; |audio_timer|next_counter~25                                       ; |audio_timer|next_counter~25                                       ; out              ;
+; |audio_timer|next_counter~26                                       ; |audio_timer|next_counter~26                                       ; out              ;
+; |audio_timer|next_counter~27                                       ; |audio_timer|next_counter~27                                       ; out              ;
+; |audio_timer|next_counter~28                                       ; |audio_timer|next_counter~28                                       ; out              ;
+; |audio_timer|next_counter~29                                       ; |audio_timer|next_counter~29                                       ; out              ;
+; |audio_timer|next_counter~30                                       ; |audio_timer|next_counter~30                                       ; out              ;
+; |audio_timer|next_counter~31                                       ; |audio_timer|next_counter~31                                       ; out              ;
+; |audio_timer|next_counter~32                                       ; |audio_timer|next_counter~32                                       ; out              ;
+; |audio_timer|next_counter~33                                       ; |audio_timer|next_counter~33                                       ; out              ;
+; |audio_timer|next_counter~34                                       ; |audio_timer|next_counter~34                                       ; out              ;
+; |audio_timer|next_counter~35                                       ; |audio_timer|next_counter~35                                       ; out              ;
+; |audio_timer|next_counter~36                                       ; |audio_timer|next_counter~36                                       ; out              ;
+; |audio_timer|next_counter~37                                       ; |audio_timer|next_counter~37                                       ; out              ;
+; |audio_timer|next_counter~38                                       ; |audio_timer|next_counter~38                                       ; out              ;
+; |audio_timer|next_counter~39                                       ; |audio_timer|next_counter~39                                       ; out              ;
+; |audio_timer|next_counter~40                                       ; |audio_timer|next_counter~40                                       ; out              ;
+; |audio_timer|next_counter~41                                       ; |audio_timer|next_counter~41                                       ; out              ;
+; |audio_timer|next_counter~42                                       ; |audio_timer|next_counter~42                                       ; out              ;
+; |audio_timer|next_counter~43                                       ; |audio_timer|next_counter~43                                       ; out              ;
+; |audio_timer|next_counter~44                                       ; |audio_timer|next_counter~44                                       ; out              ;
+; |audio_timer|next_counter~45                                       ; |audio_timer|next_counter~45                                       ; out              ;
+; |audio_timer|next_counter~46                                       ; |audio_timer|next_counter~46                                       ; out              ;
+; |audio_timer|next_counter~47                                       ; |audio_timer|next_counter~47                                       ; out              ;
+; |audio_timer|control[0]                                            ; |audio_timer|control[0]                                            ; out              ;
+; |audio_timer|control[1]                                            ; |audio_timer|control[1]                                            ; out              ;
+; |audio_timer|clk                                                   ; |audio_timer|clk                                                   ; out              ;
+; |audio_timer|counter[0]                                            ; |audio_timer|counter[0]                                            ; pin_out          ;
+; |audio_timer|counter[1]                                            ; |audio_timer|counter[1]                                            ; pin_out          ;
+; |audio_timer|counter[2]                                            ; |audio_timer|counter[2]                                            ; pin_out          ;
+; |audio_timer|counter[3]                                            ; |audio_timer|counter[3]                                            ; pin_out          ;
+; |audio_timer|counter[4]                                            ; |audio_timer|counter[4]                                            ; pin_out          ;
+; |audio_timer|counter[5]                                            ; |audio_timer|counter[5]                                            ; pin_out          ;
+; |audio_timer|counter[6]                                            ; |audio_timer|counter[6]                                            ; pin_out          ;
+; |audio_timer|counter[7]                                            ; |audio_timer|counter[7]                                            ; pin_out          ;
+; |audio_timer|counter[8]                                            ; |audio_timer|counter[8]                                            ; pin_out          ;
+; |audio_timer|counter[9]                                            ; |audio_timer|counter[9]                                            ; pin_out          ;
+; |audio_timer|counter[10]                                           ; |audio_timer|counter[10]                                           ; pin_out          ;
+; |audio_timer|counter[11]                                           ; |audio_timer|counter[11]                                           ; pin_out          ;
+; |audio_timer|counter[12]                                           ; |audio_timer|counter[12]                                           ; pin_out          ;
+; |audio_timer|counter[13]                                           ; |audio_timer|counter[13]                                           ; pin_out          ;
+; |audio_timer|counter[14]                                           ; |audio_timer|counter[14]                                           ; pin_out          ;
+; |audio_timer|counter[15]                                           ; |audio_timer|counter[15]                                           ; pin_out          ;
+; |audio_timer|counter[16]                                           ; |audio_timer|counter[16]                                           ; pin_out          ;
+; |audio_timer|counter[17]                                           ; |audio_timer|counter[17]                                           ; pin_out          ;
+; |audio_timer|counter[18]                                           ; |audio_timer|counter[18]                                           ; pin_out          ;
+; |audio_timer|Add0~0                                                ; |audio_timer|Add0~0                                                ; out0             ;
+; |audio_timer|Add0~1                                                ; |audio_timer|Add0~1                                                ; out0             ;
+; |audio_timer|Add0~2                                                ; |audio_timer|Add0~2                                                ; out0             ;
+; |audio_timer|Add0~3                                                ; |audio_timer|Add0~3                                                ; out0             ;
+; |audio_timer|Add0~4                                                ; |audio_timer|Add0~4                                                ; out0             ;
+; |audio_timer|Add0~5                                                ; |audio_timer|Add0~5                                                ; out0             ;
+; |audio_timer|Add0~6                                                ; |audio_timer|Add0~6                                                ; out0             ;
+; |audio_timer|Add0~7                                                ; |audio_timer|Add0~7                                                ; out0             ;
+; |audio_timer|Add0~8                                                ; |audio_timer|Add0~8                                                ; out0             ;
+; |audio_timer|Add0~9                                                ; |audio_timer|Add0~9                                                ; out0             ;
+; |audio_timer|Add0~10                                               ; |audio_timer|Add0~10                                               ; out0             ;
+; |audio_timer|Add0~11                                               ; |audio_timer|Add0~11                                               ; out0             ;
+; |audio_timer|Add0~12                                               ; |audio_timer|Add0~12                                               ; out0             ;
+; |audio_timer|Add0~13                                               ; |audio_timer|Add0~13                                               ; out0             ;
+; |audio_timer|Add0~14                                               ; |audio_timer|Add0~14                                               ; out0             ;
+; |audio_timer|Add0~15                                               ; |audio_timer|Add0~15                                               ; out0             ;
+; |audio_timer|Add0~16                                               ; |audio_timer|Add0~16                                               ; out0             ;
+; |audio_timer|Add0~17                                               ; |audio_timer|Add0~17                                               ; out0             ;
+; |audio_timer|Add0~18                                               ; |audio_timer|Add0~18                                               ; out0             ;
+; |audio_timer|Add0~19                                               ; |audio_timer|Add0~19                                               ; out0             ;
+; |audio_timer|Add0~20                                               ; |audio_timer|Add0~20                                               ; out0             ;
+; |audio_timer|Add0~21                                               ; |audio_timer|Add0~21                                               ; out0             ;
+; |audio_timer|Add0~22                                               ; |audio_timer|Add0~22                                               ; out0             ;
+; |audio_timer|Add0~23                                               ; |audio_timer|Add0~23                                               ; out0             ;
+; |audio_timer|Add0~24                                               ; |audio_timer|Add0~24                                               ; out0             ;
+; |audio_timer|Add0~25                                               ; |audio_timer|Add0~25                                               ; out0             ;
+; |audio_timer|Add0~26                                               ; |audio_timer|Add0~26                                               ; out0             ;
+; |audio_timer|Add0~27                                               ; |audio_timer|Add0~27                                               ; out0             ;
+; |audio_timer|Add0~28                                               ; |audio_timer|Add0~28                                               ; out0             ;
+; |audio_timer|Add0~29                                               ; |audio_timer|Add0~29                                               ; out0             ;
+; |audio_timer|Add0~30                                               ; |audio_timer|Add0~30                                               ; out0             ;
+; |audio_timer|Add0~31                                               ; |audio_timer|Add0~31                                               ; out0             ;
+; |audio_timer|Add0~32                                               ; |audio_timer|Add0~32                                               ; out0             ;
+; |audio_timer|Add0~33                                               ; |audio_timer|Add0~33                                               ; out0             ;
+; |audio_timer|Add0~34                                               ; |audio_timer|Add0~34                                               ; out0             ;
+; |audio_timer|Add0~35                                               ; |audio_timer|Add0~35                                               ; out0             ;
+; |audio_timer|Add0~36                                               ; |audio_timer|Add0~36                                               ; out0             ;
+; |audio_timer|Add1~0                                                ; |audio_timer|Add1~0                                                ; out0             ;
+; |audio_timer|Add1~1                                                ; |audio_timer|Add1~1                                                ; out0             ;
+; |audio_timer|Add1~2                                                ; |audio_timer|Add1~2                                                ; out0             ;
+; |audio_timer|Add1~3                                                ; |audio_timer|Add1~3                                                ; out0             ;
+; |audio_timer|Add1~4                                                ; |audio_timer|Add1~4                                                ; out0             ;
+; |audio_timer|Add1~5                                                ; |audio_timer|Add1~5                                                ; out0             ;
+; |audio_timer|Add1~6                                                ; |audio_timer|Add1~6                                                ; out0             ;
+; |audio_timer|Add1~7                                                ; |audio_timer|Add1~7                                                ; out0             ;
+; |audio_timer|Add1~8                                                ; |audio_timer|Add1~8                                                ; out0             ;
+; |audio_timer|Add1~9                                                ; |audio_timer|Add1~9                                                ; out0             ;
+; |audio_timer|Add1~10                                               ; |audio_timer|Add1~10                                               ; out0             ;
+; |audio_timer|Add1~11                                               ; |audio_timer|Add1~11                                               ; out0             ;
+; |audio_timer|Add1~12                                               ; |audio_timer|Add1~12                                               ; out0             ;
+; |audio_timer|Add1~13                                               ; |audio_timer|Add1~13                                               ; out0             ;
+; |audio_timer|Add1~14                                               ; |audio_timer|Add1~14                                               ; out0             ;
+; |audio_timer|Add1~15                                               ; |audio_timer|Add1~15                                               ; out0             ;
+; |audio_timer|Add1~16                                               ; |audio_timer|Add1~16                                               ; out0             ;
+; |audio_timer|Add1~17                                               ; |audio_timer|Add1~17                                               ; out0             ;
+; |audio_timer|Add1~18                                               ; |audio_timer|Add1~18                                               ; out0             ;
+; |audio_timer|Add1~19                                               ; |audio_timer|Add1~19                                               ; out0             ;
+; |audio_timer|Add1~20                                               ; |audio_timer|Add1~20                                               ; out0             ;
+; |audio_timer|Add1~21                                               ; |audio_timer|Add1~21                                               ; out0             ;
+; |audio_timer|Add1~22                                               ; |audio_timer|Add1~22                                               ; out0             ;
+; |audio_timer|Add1~23                                               ; |audio_timer|Add1~23                                               ; out0             ;
+; |audio_timer|Add1~24                                               ; |audio_timer|Add1~24                                               ; out0             ;
+; |audio_timer|Add1~25                                               ; |audio_timer|Add1~25                                               ; out0             ;
+; |audio_timer|Add1~26                                               ; |audio_timer|Add1~26                                               ; out0             ;
+; |audio_timer|Add1~27                                               ; |audio_timer|Add1~27                                               ; out0             ;
+; |audio_timer|Add1~28                                               ; |audio_timer|Add1~28                                               ; out0             ;
+; |audio_timer|Add1~29                                               ; |audio_timer|Add1~29                                               ; out0             ;
+; |audio_timer|Add1~30                                               ; |audio_timer|Add1~30                                               ; out0             ;
+; |audio_timer|Add1~31                                               ; |audio_timer|Add1~31                                               ; out0             ;
+; |audio_timer|Add1~32                                               ; |audio_timer|Add1~32                                               ; out0             ;
+; |audio_timer|Add1~33                                               ; |audio_timer|Add1~33                                               ; out0             ;
+; |audio_timer|Add1~34                                               ; |audio_timer|Add1~34                                               ; out0             ;
+; |audio_timer|Add1~35                                               ; |audio_timer|Add1~35                                               ; out0             ;
+; |audio_timer|Add1~36                                               ; |audio_timer|Add1~36                                               ; out0             ;
+; |audio_timer|Add1~37                                               ; |audio_timer|Add1~37                                               ; out0             ;
+; |audio_timer|Add1~38                                               ; |audio_timer|Add1~38                                               ; out0             ;
+; |audio_timer|Add1~39                                               ; |audio_timer|Add1~39                                               ; out0             ;
+; |audio_timer|Add1~40                                               ; |audio_timer|Add1~40                                               ; out0             ;
+; |audio_timer|Add1~41                                               ; |audio_timer|Add1~41                                               ; out0             ;
+; |audio_timer|Add1~42                                               ; |audio_timer|Add1~42                                               ; out0             ;
+; |audio_timer|Add1~43                                               ; |audio_timer|Add1~43                                               ; out0             ;
+; |audio_timer|Add1~44                                               ; |audio_timer|Add1~44                                               ; out0             ;
+; |audio_timer|Add1~45                                               ; |audio_timer|Add1~45                                               ; out0             ;
+; |audio_timer|Add1~46                                               ; |audio_timer|Add1~46                                               ; out0             ;
+; |audio_timer|Add1~47                                               ; |audio_timer|Add1~47                                               ; out0             ;
+; |audio_timer|Add1~48                                               ; |audio_timer|Add1~48                                               ; out0             ;
+; |audio_timer|Add1~49                                               ; |audio_timer|Add1~49                                               ; out0             ;
+; |audio_timer|Add1~50                                               ; |audio_timer|Add1~50                                               ; out0             ;
+; |audio_timer|Add1~51                                               ; |audio_timer|Add1~51                                               ; out0             ;
+; |audio_timer|Add1~52                                               ; |audio_timer|Add1~52                                               ; out0             ;
+; |audio_timer|Add1~53                                               ; |audio_timer|Add1~53                                               ; out0             ;
+; |audio_timer|Add1~54                                               ; |audio_timer|Add1~54                                               ; out0             ;
+; |audio_timer|Add1~55                                               ; |audio_timer|Add1~55                                               ; out0             ;
+; |audio_timer|Add1~57                                               ; |audio_timer|Add1~57                                               ; out0             ;
+; |audio_timer|Add1~58                                               ; |audio_timer|Add1~58                                               ; out0             ;
+; |audio_timer|Add1~60                                               ; |audio_timer|Add1~60                                               ; out0             ;
+; |audio_timer|Add1~61                                               ; |audio_timer|Add1~61                                               ; out0             ;
+; |audio_timer|Add1~63                                               ; |audio_timer|Add1~63                                               ; out0             ;
+; |audio_timer|Add1~64                                               ; |audio_timer|Add1~64                                               ; out0             ;
+; |audio_timer|Add1~66                                               ; |audio_timer|Add1~66                                               ; out0             ;
+; |audio_timer|Equal0~0                                              ; |audio_timer|Equal0~0                                              ; out0             ;
+; |audio_timer|Equal1~0                                              ; |audio_timer|Equal1~0                                              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~1              ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~1              ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~3              ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~3              ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~5              ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~5              ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~6              ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~6              ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~7              ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~7              ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~8              ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~8              ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~9              ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~9              ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~11             ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~11             ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~13             ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~13             ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~14             ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~14             ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~15             ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~15             ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~16             ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~16             ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~17             ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~17             ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|result_node[0]~1 ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|result_node[0]~1 ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|result_node[0]   ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|result_node[0]   ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~0               ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~0               ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~1               ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~1               ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~3               ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~3               ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~5               ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~5               ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~6               ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~6               ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~7               ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~7               ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~8               ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~8               ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|result_node[0]~0  ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|result_node[0]~0  ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~9               ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~9               ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~11              ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~11              ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~13              ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~13              ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~14              ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~14              ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~15              ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~15              ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~16              ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~16              ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~17              ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~17              ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|result_node[0]~1  ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|result_node[0]~1  ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|result_node[0]    ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|result_node[0]    ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~0               ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~0               ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~1               ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~1               ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~3               ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~3               ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~5               ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~5               ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~6               ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~6               ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~7               ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~7               ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~8               ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~8               ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]~0  ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]~0  ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~9               ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~9               ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~11              ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~11              ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~13              ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~13              ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~14              ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~14              ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~15              ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~15              ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~16              ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~16              ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~17              ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~17              ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]~1  ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]~1  ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]    ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|result_node[0]    ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~0               ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~0               ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~1               ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~1               ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~3               ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~3               ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~5               ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~5               ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~6               ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~6               ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~7               ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~7               ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~8               ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~8               ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]~0  ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]~0  ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~9               ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~9               ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~11              ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~11              ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~13              ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~13              ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~14              ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~14              ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~15              ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~15              ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~16              ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~16              ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~17              ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~17              ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]~1  ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]~1  ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]    ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|result_node[0]    ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~0               ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~0               ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~1               ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~1               ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~3               ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~3               ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~5               ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~5               ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~6               ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~6               ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~7               ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~7               ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~8               ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~8               ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]~0  ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]~0  ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~9               ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~9               ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~11              ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~11              ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~13              ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~13              ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~14              ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~14              ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~15              ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~15              ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~16              ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~16              ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~17              ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~17              ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]~1  ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]~1  ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]    ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|result_node[0]    ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~0               ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~0               ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~1               ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~1               ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~3               ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~3               ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~5               ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~5               ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~6               ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~6               ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~7               ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~7               ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~8               ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~8               ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]~0  ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]~0  ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~9               ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~9               ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~11              ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~11              ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~13              ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~13              ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~14              ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~14              ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~15              ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~15              ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~16              ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~16              ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~17              ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~17              ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]~1  ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]~1  ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]    ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|result_node[0]    ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~0               ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~0               ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~1               ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~1               ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~3               ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~3               ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~5               ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~5               ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~6               ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~6               ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~7               ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~7               ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~8               ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~8               ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]~0  ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]~0  ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~9               ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~9               ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~11              ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~11              ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~13              ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~13              ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~14              ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~14              ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~15              ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~15              ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~16              ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~16              ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~17              ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~17              ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]~1  ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]~1  ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]    ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|result_node[0]    ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~1               ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~1               ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~3               ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~3               ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~5               ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~5               ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~6               ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~6               ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~7               ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~7               ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~8               ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~8               ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~9               ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~9               ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~11              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~11              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~13              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~13              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~14              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~14              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~15              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~15              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~16              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~16              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~17              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~17              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~1  ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~1  ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]    ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]    ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~1               ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~1               ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~3               ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~3               ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~5               ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~5               ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~6               ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~6               ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~7               ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~7               ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~8               ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~8               ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~9               ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~9               ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~11              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~11              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~13              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~13              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~14              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~14              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~15              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~15              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~16              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~16              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~17              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~17              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~1  ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~1  ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]    ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]    ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~1               ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~1               ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~3               ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~3               ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~5               ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~5               ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~6               ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~6               ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~7               ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~7               ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~8               ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~8               ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~9               ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~9               ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~11              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~11              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~13              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~13              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~14              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~14              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~15              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~15              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~16              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~16              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~17              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~17              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~1  ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~1  ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]    ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]    ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~1               ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~1               ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~3               ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~3               ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~5               ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~5               ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~6               ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~6               ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~7               ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~7               ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~8               ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~8               ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~9               ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~9               ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~11              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~11              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~13              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~13              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~14              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~14              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~15              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~15              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~16              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~16              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~17              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~17              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~1  ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~1  ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]    ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]    ; out0             ;
++--------------------------------------------------------------------+--------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                 ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+; Node Name                                                         ; Output Port Name                                                  ; Output Port Type ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+; |audio_timer|counter[19]~reg0                                     ; |audio_timer|counter[19]~reg0                                     ; regout           ;
+; |audio_timer|next_counter~0                                       ; |audio_timer|next_counter~0                                       ; out              ;
+; |audio_timer|next_counter~1                                       ; |audio_timer|next_counter~1                                       ; out              ;
+; |audio_timer|next_counter~2                                       ; |audio_timer|next_counter~2                                       ; out              ;
+; |audio_timer|next_counter~3                                       ; |audio_timer|next_counter~3                                       ; out              ;
+; |audio_timer|counter[20]~reg0                                     ; |audio_timer|counter[20]~reg0                                     ; regout           ;
+; |audio_timer|counter[21]~reg0                                     ; |audio_timer|counter[21]~reg0                                     ; regout           ;
+; |audio_timer|counter[22]~reg0                                     ; |audio_timer|counter[22]~reg0                                     ; regout           ;
+; |audio_timer|counter[23]~reg0                                     ; |audio_timer|counter[23]~reg0                                     ; regout           ;
+; |audio_timer|counter[19]                                          ; |audio_timer|counter[19]                                          ; pin_out          ;
+; |audio_timer|counter[20]                                          ; |audio_timer|counter[20]                                          ; pin_out          ;
+; |audio_timer|counter[21]                                          ; |audio_timer|counter[21]                                          ; pin_out          ;
+; |audio_timer|counter[22]                                          ; |audio_timer|counter[22]                                          ; pin_out          ;
+; |audio_timer|counter[23]                                          ; |audio_timer|counter[23]                                          ; pin_out          ;
+; |audio_timer|Add0~37                                              ; |audio_timer|Add0~37                                              ; out0             ;
+; |audio_timer|Add0~38                                              ; |audio_timer|Add0~38                                              ; out0             ;
+; |audio_timer|Add0~39                                              ; |audio_timer|Add0~39                                              ; out0             ;
+; |audio_timer|Add0~40                                              ; |audio_timer|Add0~40                                              ; out0             ;
+; |audio_timer|Add0~41                                              ; |audio_timer|Add0~41                                              ; out0             ;
+; |audio_timer|Add0~42                                              ; |audio_timer|Add0~42                                              ; out0             ;
+; |audio_timer|Add0~43                                              ; |audio_timer|Add0~43                                              ; out0             ;
+; |audio_timer|Add0~44                                              ; |audio_timer|Add0~44                                              ; out0             ;
+; |audio_timer|Add1~56                                              ; |audio_timer|Add1~56                                              ; out0             ;
+; |audio_timer|Add1~59                                              ; |audio_timer|Add1~59                                              ; out0             ;
+; |audio_timer|Add1~62                                              ; |audio_timer|Add1~62                                              ; out0             ;
+; |audio_timer|Add1~65                                              ; |audio_timer|Add1~65                                              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; out0             ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                 ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+; Node Name                                                         ; Output Port Name                                                  ; Output Port Type ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+; |audio_timer|counter[19]~reg0                                     ; |audio_timer|counter[19]~reg0                                     ; regout           ;
+; |audio_timer|next_counter~0                                       ; |audio_timer|next_counter~0                                       ; out              ;
+; |audio_timer|next_counter~1                                       ; |audio_timer|next_counter~1                                       ; out              ;
+; |audio_timer|next_counter~2                                       ; |audio_timer|next_counter~2                                       ; out              ;
+; |audio_timer|next_counter~3                                       ; |audio_timer|next_counter~3                                       ; out              ;
+; |audio_timer|counter[20]~reg0                                     ; |audio_timer|counter[20]~reg0                                     ; regout           ;
+; |audio_timer|counter[21]~reg0                                     ; |audio_timer|counter[21]~reg0                                     ; regout           ;
+; |audio_timer|counter[22]~reg0                                     ; |audio_timer|counter[22]~reg0                                     ; regout           ;
+; |audio_timer|counter[23]~reg0                                     ; |audio_timer|counter[23]~reg0                                     ; regout           ;
+; |audio_timer|counter[19]                                          ; |audio_timer|counter[19]                                          ; pin_out          ;
+; |audio_timer|counter[20]                                          ; |audio_timer|counter[20]                                          ; pin_out          ;
+; |audio_timer|counter[21]                                          ; |audio_timer|counter[21]                                          ; pin_out          ;
+; |audio_timer|counter[22]                                          ; |audio_timer|counter[22]                                          ; pin_out          ;
+; |audio_timer|counter[23]                                          ; |audio_timer|counter[23]                                          ; pin_out          ;
+; |audio_timer|Add0~37                                              ; |audio_timer|Add0~37                                              ; out0             ;
+; |audio_timer|Add0~38                                              ; |audio_timer|Add0~38                                              ; out0             ;
+; |audio_timer|Add0~39                                              ; |audio_timer|Add0~39                                              ; out0             ;
+; |audio_timer|Add0~40                                              ; |audio_timer|Add0~40                                              ; out0             ;
+; |audio_timer|Add0~41                                              ; |audio_timer|Add0~41                                              ; out0             ;
+; |audio_timer|Add0~42                                              ; |audio_timer|Add0~42                                              ; out0             ;
+; |audio_timer|Add0~43                                              ; |audio_timer|Add0~43                                              ; out0             ;
+; |audio_timer|Add0~44                                              ; |audio_timer|Add0~44                                              ; out0             ;
+; |audio_timer|Add1~56                                              ; |audio_timer|Add1~56                                              ; out0             ;
+; |audio_timer|Add1~59                                              ; |audio_timer|Add1~59                                              ; out0             ;
+; |audio_timer|Add1~62                                              ; |audio_timer|Add1~62                                              ; out0             ;
+; |audio_timer|Add1~65                                              ; |audio_timer|Add1~65                                              ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux23|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux22|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux21|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux20|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux19|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux18|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux17|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux16|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux15|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux14|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux13|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux12|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux11|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~2             ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~2             ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~4             ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~4             ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~10            ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~10            ; out0             ;
+; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~12            ; |audio_timer|lpm_mux:Mux10|mux_7qc:auto_generated|_~12            ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux9|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux8|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux7|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux6|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux5|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux4|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux3|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux2|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux1|mux_7qc:auto_generated|_~12             ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~0              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~2              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~4              ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|result_node[0]~0 ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~10             ; out0             ;
+; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; |audio_timer|lpm_mux:Mux0|mux_7qc:auto_generated|_~12             ; out0             ;
++-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Oct 06 17:59:56 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off audio_timer -c audio_timer
+Info: Using vector source file "C:/Users/Zachary/Documents/CPEN-311-Lab2/Lab 2 - TestBenching/audio_timer_wave.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of audio_timer_wave.vwf called audio_timer.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      81.87 %
+Info: Number of transitions in simulation is 5457
+Info: Vector file audio_timer_wave.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 153 megabytes
+    Info: Processing ended: Fri Oct 06 17:59:56 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

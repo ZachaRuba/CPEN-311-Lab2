@@ -1,0 +1,29 @@
+`default_nettype none
+/*
+The module is used to select between outputing
+the upper or lower halves of a bus.  The output
+will be written on the posedge of the slow clock.
+*/
+module flash_out_capture #(parameter N = 32)(
+	input logic [N-1:0] read_data,
+	input logic data_valid,
+	input logic data_bus_select,
+	input logic fast_clock,
+	input logic slow_clock,
+	output logic [((N/2)-1):0] audio_out);
+
+	logic [((N/2)-1):0] data_capture, next_data_capture, read_data_seg;
+
+	// Slow Clock register logic
+	always_ff @(posedge slow_clock)
+		audio_out <= data_capture;
+
+	// Fast Clock register logic
+	always_ff @(posedge fast_clock)
+		data_capture <= next_data_capture;
+
+	always_comb
+		read_data_seg = data_bus_select ? (read_data [(N-1):(N/2)]) : (read_data [((N/2)-1):0]);
+		next_data_capture = (data_valid ? (read_data_seg) : (data_capture));
+
+endmodule

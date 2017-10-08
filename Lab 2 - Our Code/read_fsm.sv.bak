@@ -1,0 +1,48 @@
+`default_nettype none
+
+/*
+This module is will run through a read sequence of
+the flash memory module every tick of clk 22.  Please use
+flash out capture to grab the output.
+*/
+
+module read_fsm (
+	input logic clk_22_synced, clk_50, data_valid,
+	output logic read);
+	
+	parameter [3:0] idle = 4'b00_00;
+	parameter [3:0] read_op = 4'b01_01;
+	parameter [3:0] wait_read = 4'b10_00;
+	parameter [3:0] finished = 4'b11_10;
+	
+	logic [3:0] state, next_state;
+	logic start, finish;
+	
+	//assigining the outputs of fsm
+	assign read = state[0];
+	assign finish = state[1];
+	
+	//This is the prime mechanism that initiates a read when clk22 goes high
+	always_ff @(posedge finish or posedge clk_22_synced)
+		if(finish) start <= 0;
+		else start <=1;
+	
+	always_ff @(posedge clk_50) begin
+		state <= next_state;
+	end
+	
+	//wait read logic - it will wait until a data valid
+	//is read.  If not it will freeze the system
+	always_comb
+		case(state)
+			idle:	next_state = (start ? read_op : idle);
+			read_op: next_state = wait_read;
+			wait_read: next_state = (data_valid ? finished : wait_read); //see comb logic below
+			finished: next_state = idle;
+			default: next_state = idle;
+		endcase
+
+endmodule
+
+`default_nettype wire
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Oct 06 18:03:23 2017
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : flash_out_capture
+Top-level Entity Name : flash_out_capture
+Family : Cyclone III
+Total logic elements : 48
+    Total combinational functions : 16
+    Dedicated logic registers : 48
+Total registers : 48
+Total pins : 52
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,7 @@
+`default nettype none
+module audio_timer(
+	input logic [1:0] control,
+	input logic clk,
+	output logic counter);
+	
+endmodule
