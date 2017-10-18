@@ -1,5 +1,5 @@
 |simple_ipod_solution
-CLOCK_50 => CLK_50M.IN17
+CLOCK_50 => CLK_50M.IN20
 LEDR[0] <= <GND>
 LEDR[1] <= <GND>
 LEDR[2] <= <GND>
@@ -187,6 +187,240 @@ GPIO_1[32] <> <UNC>
 GPIO_1[33] <> <UNC>
 GPIO_1[34] <> <UNC>
 GPIO_1[35] <> <UNC>
+
+
+|simple_ipod_solution|doublesync:Clock22KHz_doublsync
+indata => reg1.DATAIN
+outdata <= reg2.DB_MAX_OUTPUT_PORT_TYPE
+clk => reg2.CLK
+clk => reg1.CLK
+reset => reg2.ACLR
+reset => reg1.ACLR
+
+
+|simple_ipod_solution|audio_timer:myTimer
+control[0] => Mux0.IN4
+control[0] => Mux1.IN4
+control[0] => Mux2.IN4
+control[0] => Mux3.IN4
+control[0] => Mux4.IN4
+control[0] => Mux5.IN4
+control[0] => Mux6.IN4
+control[0] => Mux7.IN4
+control[0] => Mux8.IN4
+control[0] => Mux9.IN4
+control[0] => Mux10.IN4
+control[0] => Mux11.IN4
+control[0] => Mux12.IN4
+control[0] => Mux13.IN4
+control[0] => Mux14.IN4
+control[0] => Mux15.IN4
+control[0] => Mux16.IN4
+control[0] => Mux17.IN4
+control[0] => Mux18.IN4
+control[0] => Mux19.IN4
+control[0] => Mux20.IN4
+control[0] => Mux21.IN4
+control[0] => Mux22.IN4
+control[0] => Mux23.IN4
+control[1] => Mux0.IN3
+control[1] => Mux1.IN3
+control[1] => Mux2.IN3
+control[1] => Mux3.IN3
+control[1] => Mux4.IN3
+control[1] => Mux5.IN3
+control[1] => Mux6.IN3
+control[1] => Mux7.IN3
+control[1] => Mux8.IN3
+control[1] => Mux9.IN3
+control[1] => Mux10.IN3
+control[1] => Mux11.IN3
+control[1] => Mux12.IN3
+control[1] => Mux13.IN3
+control[1] => Mux14.IN3
+control[1] => Mux15.IN3
+control[1] => Mux16.IN3
+control[1] => Mux17.IN3
+control[1] => Mux18.IN3
+control[1] => Mux19.IN3
+control[1] => Mux20.IN3
+control[1] => Mux21.IN3
+control[1] => Mux22.IN3
+control[1] => Mux23.IN3
+clk => counter[0]~reg0.CLK
+clk => counter[1]~reg0.CLK
+clk => counter[2]~reg0.CLK
+clk => counter[3]~reg0.CLK
+clk => counter[4]~reg0.CLK
+clk => counter[5]~reg0.CLK
+clk => counter[6]~reg0.CLK
+clk => counter[7]~reg0.CLK
+clk => counter[8]~reg0.CLK
+clk => counter[9]~reg0.CLK
+clk => counter[10]~reg0.CLK
+clk => counter[11]~reg0.CLK
+clk => counter[12]~reg0.CLK
+clk => counter[13]~reg0.CLK
+clk => counter[14]~reg0.CLK
+clk => counter[15]~reg0.CLK
+clk => counter[16]~reg0.CLK
+clk => counter[17]~reg0.CLK
+clk => counter[18]~reg0.CLK
+clk => counter[19]~reg0.CLK
+clk => counter[20]~reg0.CLK
+clk => counter[21]~reg0.CLK
+clk => counter[22]~reg0.CLK
+clk => counter[23]~reg0.CLK
+counter[0] <= counter[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[1] <= counter[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[2] <= counter[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[3] <= counter[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[4] <= counter[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[5] <= counter[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[6] <= counter[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[7] <= counter[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[8] <= counter[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[9] <= counter[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[10] <= counter[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[11] <= counter[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[12] <= counter[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[13] <= counter[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[14] <= counter[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[15] <= counter[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[16] <= counter[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[17] <= counter[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[18] <= counter[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[19] <= counter[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[20] <= counter[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[21] <= counter[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[22] <= counter[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter[23] <= counter[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simple_ipod_solution|read_fsm:flashReader
+clk_22_synced => start.CLK
+clk_50 => state[0].CLK
+clk_50 => state[1].CLK
+clk_50 => state[2].CLK
+clk_50 => state[3].CLK
+data_valid => Mux0.IN14
+data_valid => next_state[1].DATAB
+read <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simple_ipod_solution|flash_out_capture:flashout
+read_data[0] => read_data_seg[0].DATAA
+read_data[1] => read_data_seg[1].DATAA
+read_data[2] => read_data_seg[2].DATAA
+read_data[3] => read_data_seg[3].DATAA
+read_data[4] => read_data_seg[4].DATAA
+read_data[5] => read_data_seg[5].DATAA
+read_data[6] => read_data_seg[6].DATAA
+read_data[7] => read_data_seg[7].DATAA
+read_data[8] => read_data_seg[8].DATAA
+read_data[9] => read_data_seg[9].DATAA
+read_data[10] => read_data_seg[10].DATAA
+read_data[11] => read_data_seg[11].DATAA
+read_data[12] => read_data_seg[12].DATAA
+read_data[13] => read_data_seg[13].DATAA
+read_data[14] => read_data_seg[14].DATAA
+read_data[15] => read_data_seg[15].DATAA
+read_data[16] => read_data_seg[0].DATAB
+read_data[17] => read_data_seg[1].DATAB
+read_data[18] => read_data_seg[2].DATAB
+read_data[19] => read_data_seg[3].DATAB
+read_data[20] => read_data_seg[4].DATAB
+read_data[21] => read_data_seg[5].DATAB
+read_data[22] => read_data_seg[6].DATAB
+read_data[23] => read_data_seg[7].DATAB
+read_data[24] => read_data_seg[8].DATAB
+read_data[25] => read_data_seg[9].DATAB
+read_data[26] => read_data_seg[10].DATAB
+read_data[27] => read_data_seg[11].DATAB
+read_data[28] => read_data_seg[12].DATAB
+read_data[29] => read_data_seg[13].DATAB
+read_data[30] => read_data_seg[14].DATAB
+read_data[31] => read_data_seg[15].DATAB
+data_valid => next_data_capture[15].OUTPUTSELECT
+data_valid => next_data_capture[14].OUTPUTSELECT
+data_valid => next_data_capture[13].OUTPUTSELECT
+data_valid => next_data_capture[12].OUTPUTSELECT
+data_valid => next_data_capture[11].OUTPUTSELECT
+data_valid => next_data_capture[10].OUTPUTSELECT
+data_valid => next_data_capture[9].OUTPUTSELECT
+data_valid => next_data_capture[8].OUTPUTSELECT
+data_valid => next_data_capture[7].OUTPUTSELECT
+data_valid => next_data_capture[6].OUTPUTSELECT
+data_valid => next_data_capture[5].OUTPUTSELECT
+data_valid => next_data_capture[4].OUTPUTSELECT
+data_valid => next_data_capture[3].OUTPUTSELECT
+data_valid => next_data_capture[2].OUTPUTSELECT
+data_valid => next_data_capture[1].OUTPUTSELECT
+data_valid => next_data_capture[0].OUTPUTSELECT
+data_bus_select => read_data_seg[15].OUTPUTSELECT
+data_bus_select => read_data_seg[14].OUTPUTSELECT
+data_bus_select => read_data_seg[13].OUTPUTSELECT
+data_bus_select => read_data_seg[12].OUTPUTSELECT
+data_bus_select => read_data_seg[11].OUTPUTSELECT
+data_bus_select => read_data_seg[10].OUTPUTSELECT
+data_bus_select => read_data_seg[9].OUTPUTSELECT
+data_bus_select => read_data_seg[8].OUTPUTSELECT
+data_bus_select => read_data_seg[7].OUTPUTSELECT
+data_bus_select => read_data_seg[6].OUTPUTSELECT
+data_bus_select => read_data_seg[5].OUTPUTSELECT
+data_bus_select => read_data_seg[4].OUTPUTSELECT
+data_bus_select => read_data_seg[3].OUTPUTSELECT
+data_bus_select => read_data_seg[2].OUTPUTSELECT
+data_bus_select => read_data_seg[1].OUTPUTSELECT
+data_bus_select => read_data_seg[0].OUTPUTSELECT
+fast_clock => data_capture[0].CLK
+fast_clock => data_capture[1].CLK
+fast_clock => data_capture[2].CLK
+fast_clock => data_capture[3].CLK
+fast_clock => data_capture[4].CLK
+fast_clock => data_capture[5].CLK
+fast_clock => data_capture[6].CLK
+fast_clock => data_capture[7].CLK
+fast_clock => data_capture[8].CLK
+fast_clock => data_capture[9].CLK
+fast_clock => data_capture[10].CLK
+fast_clock => data_capture[11].CLK
+fast_clock => data_capture[12].CLK
+fast_clock => data_capture[13].CLK
+fast_clock => data_capture[14].CLK
+fast_clock => data_capture[15].CLK
+slow_clock => audio_out[0]~reg0.CLK
+slow_clock => audio_out[1]~reg0.CLK
+slow_clock => audio_out[2]~reg0.CLK
+slow_clock => audio_out[3]~reg0.CLK
+slow_clock => audio_out[4]~reg0.CLK
+slow_clock => audio_out[5]~reg0.CLK
+slow_clock => audio_out[6]~reg0.CLK
+slow_clock => audio_out[7]~reg0.CLK
+slow_clock => audio_out[8]~reg0.CLK
+slow_clock => audio_out[9]~reg0.CLK
+slow_clock => audio_out[10]~reg0.CLK
+slow_clock => audio_out[11]~reg0.CLK
+slow_clock => audio_out[12]~reg0.CLK
+slow_clock => audio_out[13]~reg0.CLK
+slow_clock => audio_out[14]~reg0.CLK
+slow_clock => audio_out[15]~reg0.CLK
+audio_out[0] <= audio_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[1] <= audio_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[2] <= audio_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[3] <= audio_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[4] <= audio_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[5] <= audio_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[6] <= audio_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[7] <= audio_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[8] <= audio_out[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[9] <= audio_out[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[10] <= audio_out[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[11] <= audio_out[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[12] <= audio_out[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[13] <= audio_out[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[14] <= audio_out[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+audio_out[15] <= audio_out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |simple_ipod_solution|flash:flash_inst
@@ -1552,7 +1786,7 @@ scope_channelB[15] => ~NO_FANOUT~
 enable_scope <= <GND>
 
 
-|simple_ipod_solution|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk
+|simple_ipod_solution|Generate_Arbitrary_Divided_Clk32:Gen_22KHz_clk
 inclk => inclk.IN1
 outclk <= var_clk_div32:Div_Clk.outclk
 outclk_Not <= var_clk_div32:Div_Clk.outclk_not
@@ -1591,7 +1825,7 @@ div_clk_count[31] => div_clk_count[31].IN1
 Reset => Reset.IN1
 
 
-|simple_ipod_solution|Generate_Arbitrary_Divided_Clk32:Gen_1KHz_clk|var_clk_div32:Div_Clk
+|simple_ipod_solution|Generate_Arbitrary_Divided_Clk32:Gen_22KHz_clk|var_clk_div32:Div_Clk
 inclk => ~NO_FANOUT~
 outclk <= <GND>
 outclk_not <= <GND>

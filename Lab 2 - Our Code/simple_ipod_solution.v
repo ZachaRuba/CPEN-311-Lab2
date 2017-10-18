@@ -218,14 +218,43 @@ parameter character_exclaim=8'h21;          //'!'
 wire Clock_22KHz, Clock_1Hz;
 wire Sample_Clk_Signal;
 
-//=======================================================================================================================
-//
-// Insert your code for Lab2 here!
-//
-//
+//Added Lab Code
+wire [23:0] timer_address;
+wire data_is_valid;
+wire [31:0] read_data;
+wire synced_Clock_22KHz;
 
 
+doublesync Clock22KHz_doublsync (.indata (Clock_22KHz),
+.outdata(synced_Clock_22KHz),
+.clk(CLK_50M),
+.reset(1'b1));
 
+audio_timer myTimer(	.control (2'b01),
+							.clk 		(synced_Clock_22KHz),
+							.counter (timer_address));
+							
+read_fsm flashReader(
+							.clk_22_synced (synced_Clock_22KHz),
+							.clk_50(CLK_50M),
+							.data_valid(data_is_valid),
+							.read(read_data)
+);
+
+flash_out_capture flashout(
+							.read_data(flash_mem_readdata),
+							.data_valid(flash_mem_readdatavalid),
+							.data_bus_select(timer_address[0]),
+							.fast_clock(CLK_50M),
+							.slow_clock(synced_Clock_22KHz),
+							.audio_out(audio_data)
+);
+							
+assign flash_mem_address = timer_address[23:1];
+assign flash_mem_read = read_data;
+assign data_is_valid = flash_mem_readdatavalid;
+
+//End of Added Lab Code
 
 wire            flash_mem_read;
 wire            flash_mem_waitrequest;
@@ -254,7 +283,7 @@ assign Sample_Clk_Signal = Clock_22KHz;
 
 //Audio Generation Signal
 //Note that the audio needs signed data - so convert 1 bit to 8 bits signed
-wire [7:0] audio_data = {~Sample_Clk_Signal,{7{Sample_Clk_Signal}}}; //generate signed sample audio signal
+wire [7:0] audio_data; // = {~Sample_Clk_Signal,{7{Sample_Clk_Signal}}}; //generate signed sample audio signal
 
 
 
